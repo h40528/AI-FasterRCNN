@@ -1,5 +1,5 @@
 
-from ffiex import _wrap_function
+from .ffiex import _wrap_function
 from ._roi_pooling import lib as _lib, ffi as _ffi
 
 __all__ = []
