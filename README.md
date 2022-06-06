@@ -1,3 +1,4 @@
+# COPIED FROM yingxingde
 # FasterRCNN-pytorch
 
 FasterRCNN is implemented in VGG, ResNet and FPN base. 
