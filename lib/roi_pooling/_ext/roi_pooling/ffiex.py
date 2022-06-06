@@ -13,9 +13,9 @@ try:
 except ImportError:
     raise ImportError("torch.utils.ffi requires the cffi package")
 
-if cffi.version_info < (1, 4, 0):
+if cffi.__version_info__ < (1, 4, 0):
     raise ImportError("torch.utils.ffi requires cffi version >= 1.4, but "
-                      "got " + '.'.join(map(str, cffi.version_info)))
+                      "got " + '.'.join(map(str, cffi.__version_info__)))
 
 
 def _generate_typedefs():
